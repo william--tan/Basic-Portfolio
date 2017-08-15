@@ -1,0 +1,226 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper{
+	position: relative;
+	height: 0px;
+	margin: 0 auto 0 auto;
+	width: 960px;
+}
+
+#header{
+	height:100px;
+	width: 100%;
+	background.color: white;
+	overflow-x: hidden;
+}
+
+.logo{
+	height:100px;
+	width:30%;
+	float: left;
+	background-color: teal;
+}
+
+.logo h1{
+	text-align: center;
+	padding-top: 33px;
+	font-family: 'Georgia';
+	font-size: 1.9em;
+	color: white;
+}
+
+.nav{
+	height:10px;
+	width: 30%;
+	float: right;
+	display: inline;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	padding-right: 10px;
+}
+
+.nav a{
+	font-family: "Arial";
+	color: black;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+	float: right;
+	text-decoration: none;
+}
+
+.nav p{
+	font-family: "Arial";
+	color: black;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+	float: right;
+}
+
+.nav a:hover{
+	font-weight: bold;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 0.9em;
+	transition: 0.1s all ease-in;
+}
+
+.nav p:hover{
+	font-weight: bold;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 0.9em;
+	transition: 0.1s all ease-in;
+}
+
+#content{
+	padding: 0px 0px 40px 0px;
+	background-image: url("../images/dimension.png");
+	background-repeat: repeat;
+	overflow-y: auto;
+
+}
+
+.main{
+	display: flex;
+	flex-flow: column;
+	min-height: 300px;
+	width: 650px;
+	margin: 50px 5px 50px 0px;
+	float: left;
+	background-color: white;
+	border: 1px solid #dddddd;
+	padding-bottom: 40px;
+	display:inline-block;
+}
+
+.main h1{
+	font-family: "Georgia", Serif;
+	color: teal;
+	font-size: 1.8em;
+	padding: 20px;
+	margin: 0 20px 0 20px;
+	border-bottom: 2px solid #dddddd;
+}
+
+.main p{
+	font-family: "Helvetica";
+	color: #777777;
+	padding-top: 20px;
+	padding-left: 20px;
+	margin: 0 20px 0 20px;
+}
+
+input.name{
+	width: 550px;
+	height: 20px;
+	left: 40px;
+	top: 10px;
+	position: relative;
+}
+
+input.email{
+	width: 550px;
+	height: 20px;
+	left: 40px;
+	top: 10px;
+	position: relative;
+}
+
+textarea{
+	left: 40px;
+	top: 10px;
+	width: 85%;
+	position: relative;
+}
+
+button{
+	background-color: teal;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	padding: 10px 30px;
+	top: 20px;
+	left: 486px;
+	position: relative;
+	color: white;
+	font-size: 0.9em;
+}
+
+.main img{
+	display: inline-block;
+}
+
+div.left{
+	float: left;
+	margin-left: 40px;
+	margin-top: 30px;
+}
+
+div.right{
+	float: right;
+	margin-right: 40px;
+	margin-top: 30px;
+}
+
+div.rec{
+	width: 270px;
+	height: 50px;
+	background: teal;
+	position: relative;
+	top: -75px;
+
+}
+
+h2.pf{
+	font-family: "Georgia";
+	font-size: 1.2em;
+	color: white;
+	padding: 15px;
+	text-align: center;
+}
+
+.sidebar{
+	width: 270px;
+	margin: 50px 0px 5px 5px;
+	float: right;
+	height: 200px;
+	background-color: white;
+	border: 1px solid #dddddd;
+	display: inline-block;
+}
+
+.sidebar h1{
+	font-family: "Georgia", Serif;
+	color: teal;
+	font-size: 1.5em;
+	padding: 20px;
+	margin: 0 10px 0 10px;
+	border-bottom: 2px solid #dddddd;
+}
+
+.sidebar img{
+	padding-left: 20px;
+	padding-top: 30px;
+
+}
+
+.footer{
+	height: 100px;
+	border-top: 10px solid teal;
+	background-color: grey;
+	width: 100%;
+	overflow-x: hidden;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.footer a{
+	color: white;
+	font-family: "Arial";
+}
+
