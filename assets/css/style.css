@@ -50,7 +50,7 @@
 	height:10px;
 	width: 30%;
 	float: right;
-	display: inline;
+	display: inline-block;
 	padding-top: 45px;
 	padding-bottom: 45px;
 	padding-right: 10px;
@@ -59,43 +59,26 @@
 .nav a{
 	font-family: "Montserrat";
 	color: white;
-	padding-left: 15px;
-	padding-right: 15px;
 	text-align: center;
 	float: right;
 	text-decoration: none;
-}
-
-.nav p{
-	font-family: "Montserrat";
-	color: white;
-	padding-left: 15px;
-	padding-right: 15px;
-	text-align: center;
-	float: right;
+	width: 85px;
 }
 
 .nav a:hover{
 	font-weight: bold;
-	padding-left: 15px;
-	padding-right: 15px;
 	font-size: 0.9em;
-	transition: 0.1s all ease-in;
-}
-
-.nav p:hover{
-	font-weight: bold;
-	padding-left: 15px;
-	padding-right: 15px;
-	font-size: 0.9em;
-	transition: 0.1s all ease-in;
+	transition: 0.2s all ease-in;
+	width: 85px;
+	text-align: center;
 }
 
 /*MAIN CONTENT AREA*/
 #content{
 	padding: 0px 0px 40px 0px;
-	background-image: url("../images/bganimate.gif");
+	background-image: url("../images/bganimate2.gif");
 	background-repeat: repeat;
+	background-size: 200px 200px;
 	overflow-y: auto;
 	overflow-x: hidden;
 }
@@ -108,9 +91,12 @@
 	margin: 50px 5px 50px 0px;
 	float: left;
 	background-color: white;
-	border: 1px solid #dddddd;
+	border: 4px solid #dddddd;
 	padding-bottom: 40px;
 	display:inline-block;
+	animation-name: borderchange;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
 }
 
 .main h1{
@@ -225,8 +211,11 @@ h2.pf{
 	float: right;
 	height: 200px;
 	background-color: white;
-	border: 1px solid #dddddd;
+	border: 4px solid #dddddd;
 	display: inline-block;
+	animation-name: borderchange;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
 }
 
 .sidebar h1{
@@ -267,7 +256,7 @@ h2.pf{
 
 .footer a{
 	color: white;
-	font-family: "Crimson Text";
+	font-family: "Montserrat";
 }
 
 @keyframes headeranimate{
@@ -286,4 +275,13 @@ h2.pf{
 	60%{ color: #79B23E; }
 	80%{ color: #FF5154; }
 	100%{ color: #4ECDC4; }
+}
+
+@keyframes borderchange{
+	0%{ border: 4px solid #91A6FF; }
+	20%{ border: 4px solid #FF88DC; }
+	40%{ border: 4px solid #FAFF7F; }
+	60%{ border: 4px solid #79B23E; }
+	80%{ border: 4px solid #FF5154; }
+	100%{ border: 4px solid #4ECDC4; }
 }
